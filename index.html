@@ -19,57 +19,140 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="a-propos-de-7switch-themes" class="anchor" href="#a-propos-de-7switch-themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>A propos de 7switch-themes</h3>
-
-<p>7switch-themes est un projet de création de thèmes pour le widget de vente de livre numérique de la librairie 7switch. Ces thèmes vous permettent d'afficher sur votre site/blog un widget qui correspond à la charte graphique de votre site.</p>
-
-<h2>
-<a id="utilisation-de-7switch-themes" class="anchor" href="#utilisation-de-7switch-themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utilisation de 7switch-themes</h2>
-
-<p>Pour utiliser 7switch-themes, il vous suffit d'insérer sur une page contenant le widget de vente de 7switch un lien vers la feuille de style (.css) d'un thème.</p>
-
-<p>Le lien vers la feuille de style d'un thème se présente ainsi:
-<code>&lt;link href="css/theme.css" rel="stylesheet"&gt;</code></p>
-
-<h3>
-<a id="où-insérer-le-lien-vers-la-feuille-de-style-" class="anchor" href="#o%C3%B9-ins%C3%A9rer-le-lien-vers-la-feuille-de-style-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Où insérer le lien vers la feuille de style ?</h3>
-
-<p>Le lien vers la feuille de style du thème 7switch-themes doit-être inséré après le lien vers la feuille de style par défaut de 7switch. Le lien vers la feuille de style étant inséré avant la fermeture de la balise </p>, pour que la feuille de style du thème soit prise en compte il faut:
-
-<ul>
-<li><p>soit insérer dynamiquement le lien vers la feuille de style du thème 7switch-themes choisi après le lien vers la feuille de style par défaut comme ceci:
-<code>&lt;link rel="stylesheet" href="https://www.7switch.com/assets/widget.css" type="text/css"&gt;
-&lt;link href="css/theme.css" rel="stylesheet"&gt;
-&lt;/head&gt;
-&lt;body&gt;</code></p></li>
-<li>
-<p>soit insérer le lien juste après l'ouverture de la balise </p> comme ceci:
-<code>&lt;link rel="stylesheet" href="https://www.7switch.com/assets/widget.css" type="text/css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;link href="css/theme.css" rel="stylesheet"&gt;</code>
-</li>
+      <ul>
+<li><strong><a href="#use">Utilisation de 7switch-themes</a></strong></li>
+<li><strong><a href="#compatibility">Compatibilité</a></strong></li>
+<li><strong><a href="#themes">Thèmes</a></strong></li>
+<li><strong><a href="#contact">Contact</a></strong></li>
 </ul>
 
 <h2>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h2>
+<a id="a-propos-de-7switch-themes" class="anchor" href="#a-propos-de-7switch-themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>A propos de 7switch-themes</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>7switch-themes est un projet de création de thèmes pour le widget de vente de livre numérique de la librairie 7switch. Ces thèmes vous permettent d'afficher sur votre site/blog un widget qui correspond à la charte graphique de votre site.</p>
+
+<hr>
 
 <h2>
-<a id="compatibilité-avec-les-navigateurs" class="anchor" href="#compatibilit%C3%A9-avec-les-navigateurs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compatibilité avec les navigateurs:</h2>
+<a id="utilisation-de-7switch-themes" class="anchor" href="#utilisation-de-7switch-themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<a name="use"></a>Utilisation de 7switch-themes</h2>
+
+<p>Pour utiliser 7switch-themes, vous pouvez:</p>
+
+<ul>
+<li><p>insérer directement sur une page contenant le widget de vente de 7switch le lien vers la feuille de style (.css) d'un thème qui se présente ainsi:
+<code>&lt;link href="http://******./css/theme.css" rel="stylesheet"&gt;</code></p></li>
+<li><p>héberger sur votre domaine la feuille de style d'un thème et insérer un lien relatif comme ceci:
+<code>&lt;link href="css/theme.css" rel="stylesheet"&gt;</code></p></li>
+</ul>
+
+<h3>
+<a id="comment-insérer-le-lien-vers-la-feuille-de-style-" class="anchor" href="#comment-ins%C3%A9rer-le-lien-vers-la-feuille-de-style-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comment insérer le lien vers la feuille de style ?</h3>
+
+<p>Le lien vers la feuille de style du thème 7switch-themes doit-être inséré après le lien vers la feuille de style par défaut de 7switch. Le lien vers la feuille de style par default étant inséré avant la fermeture de la balise <code>&lt;head&gt;</code>, pour que la feuille de style du thème soit prise en compte il faut:</p>
+
+<ul>
+<li>soit insérer dynamiquement le lien vers la feuille de style du thème 7switch-themes choisi après le lien vers la feuille de style par défaut comme ceci:</li>
+</ul>
+
+<pre><code>&lt;!-- Lien vers la feuille de style du thème 7switch par défaut --&gt;
+&lt;link rel="stylesheet" href="https://www.7switch.com/assets/widget.css" type="text/css"&gt;
+&lt;!-- Lien vers la feuille de style de votre thème 7switch--&gt;
+&lt;link href="css/theme.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+</code></pre>
+
+<ul>
+<li>soit insérer le lien juste après l'ouverture de la balise <code>&lt;body&gt;</code> comme ceci:</li>
+</ul>
+
+<pre><code>&lt;!-- Lien vers la feuille de style du thème 7switch par défaut --&gt;
+&lt;link rel="stylesheet" href="https://www.7switch.com/assets/widget.css" type="text/css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Lien vers la feuille de style de votre thème 7switch --&gt;
+&lt;link href="css/theme.css" rel="stylesheet"&gt;
+</code></pre>
+
+<p><strong>Attention</strong>,  l'insertion d'une balise <code>&lt;link&gt;</code> en dehors de la balise <code>&lt;head&gt;</code> n'est possible qu'en HTML5.  Pour être sur que la page sur laquelle le widget 7switch apparait est bien en HTML5, vérifier qu'elle commence par:</p>
+
+<p><code>&lt;!doctype html&gt;</code></p>
+
+<hr>
+
+<h2>
+<a id="compatibilité" class="anchor" href="#compatibilit%C3%A9" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<a name="compatibility"></a>Compatibilité:</h2>
 
 <p>Voici la liste des navigateurs sur lesquels les thèmes ont été testés: </p>
 
 <h2></h2>
 
+<hr>
+
 <h2>
-<a id="support-et-contact" class="anchor" href="#support-et-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support et contact</h2>
+<a id="thèmes" class="anchor" href="#th%C3%A8mes" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<a name="themes"></a>Thèmes:</h2>
+
+<h3>
+<a id="light" class="anchor" href="#light" aria-hidden="true"><span class="octicon octicon-link"></span></a>Light</h3>
+
+<p><img src="https://lh3.googleusercontent.com/-BVV_VyPo7UU/VVNuC_iJuUI/AAAAAAAALRM/Vv5ArGY29R0/s0/Capture+d%E2%80%99e%CC%81cran+2015-05-12+a%CC%80+19.31.54.png" alt="enter image description here" title="ThemeLight.png"></p>
+
+<p>Télécharger la feuille de style
+Lien vers la feuille de style à insérer sur votre page</p>
+
+<pre><code>enter code here
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="dark" class="anchor" href="#dark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dark</h3>
+
+<p><img src="https://lh3.googleusercontent.com/-BsFVP9zEQo0/VVNuNAHU56I/AAAAAAAALRY/l5gPsDCfhp4/s0/Capture+d%E2%80%99e%CC%81cran+2015-05-12+a%CC%80+19.32.42.png" alt="enter image description here" title="ThemeDark.png"></p>
+
+<p>Télécharger la feuille de style
+Lien vers la feuille de style à insérer sur votre page</p>
+
+<pre><code>enter code here
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="immat" class="anchor" href="#immat" aria-hidden="true"><span class="octicon octicon-link"></span></a>Immat</h3>
+
+<p><img src="https://lh3.googleusercontent.com/-ry-g6CYdbAk/VVNuWsHnyOI/AAAAAAAALRk/C-A7NFWIeFU/s0/Capture+d%E2%80%99e%CC%81cran+2015-05-12+a%CC%80+19.32.58.png" alt="enter image description here" title="ThemeImmat.png"></p>
+
+<p>Télécharger la feuille de style
+Lien vers la feuille de style à insérer sur votre page</p>
+
+<pre><code>enter code here
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="morse" class="anchor" href="#morse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Morse</h3>
+
+<p><img src="https://lh3.googleusercontent.com/-hOxLhzTtYpo/VVNumist8tI/AAAAAAAALR8/x14Fa5270Jg/s0/Capture+d%E2%80%99e%CC%81cran+2015-05-12+a%CC%80+19.32.18.png" alt="enter image description here" title="ThemeMorse.png"></p>
+
+<p>Télécharger la feuille de style
+Lien vers la feuille de style à insérer sur votre page</p>
+
+<pre><code>enter code here
+</code></pre>
+
+<hr>
+
+<h2>
+<a id="support-et-contact" class="anchor" href="#support-et-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<a name="contact"></a>Support et contact</h2>
+
+<p>7switch-theme est un projet initié et maintenu par Nicolas Rouault. Si vous avez des questions sur les thèmes, leur utilisation ou souhaitez participer à ce projet, contactez-moi sur twitter: @RouauNic </p>
 
 <p>7switch est une librairie qui fournit un service d'affiliation pour la vente de livres numériques. Vous pouvez obtenir plus d'informations sur ce service et commencer à vendre des livres numériques en vous rendant sur la page suivante: <a href="https://www.7switch.com/fr/static/sale-with-7switch">https://www.7switch.com/fr/static/sale-with-7switch</a></p>
-
-<p>7switch-theme est un projet initié par Nicolas Rouault. Si vous avez des questions sur les thèmes, leur utilisation ou souhaitez participer à ce projet, contactez-moi sur twitter: @RouauNic </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/trouba/7switch-themes">7switchthemes</a> is maintained by <a href="https://github.com/trouba">trouba</a>.</span>
